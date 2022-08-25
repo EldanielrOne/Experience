@@ -1,0 +1,151 @@
+//Calcular a idade de uma pessoa atraves da sua idade em DIAS. (anos, meses e dias que a pessoa viveu)
+
+
+let anosVividos = 33;
+let mesesVividos = 10;
+let diasVividos = 20;
+
+let tempoTotal = (anosVividos * 365) + (mesesVividos * 30) + diasVividos;
+
+console.log("O número de dias vividos por essa pessoa foi: " + tempoTotal);
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+//Definir um numero total de eleitores por municipio
+// a quantidade de votos validos, nulos e brancos
+
+var votosTotais = 5000;
+var brancos = 1000
+var nulos = 500;
+var validos = 3500;
+
+var percentValidos = validos / votosTotais * 100;
+var percentBrancos = brancos / votosTotais * 100;
+var percentNulos = nulos / votosTotais * 100;
+
+console.log(`Válidos é: ${percentValidos}%` );
+console.log(`brancos é: ${percentBrancos}%`);
+console.log(`Nulos é: ${percentNulos}%`);
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+
+
+//Condicionais C3c (if dentro de if)
+
+var idade = 18;
+var sexo = 'f';
+
+if(idade >= 18){
+    if(sexo == 'f'){
+        console.log("Tem que servir!");
+    }else{
+        console.log("Tem que servir, maxo!");
+    }
+
+}else{
+    console.log("Não pode servir!");
+
+}
+
+
+_________________________________________________________
+
+
+
+
+//CondicionaisComposta C3c
+
+var idade = 18;
+var sexo = 'm';
+
+if(idade >= 18 && sexo == "m" || sexo == "M"){
+    console.log("Pode servir!");
+}else if(idade >= 18 && sexo == "f" || sexo == "F"){
+    console.log("Opcional");
+
+}else{
+    console.log("Não pode servir!");
+}
+
+
+
+
+
+______________________________________________________________________
+
+
+//Switch case condicional
+
+var user = "daniel";
+switch (user){
+    case "Admin", "teste": /* No case pode colocar mais opções da condição separado por virgula, como usado em ', "Teste" '*/
+    console.log("Bem vindo Admin!");
+    break;
+    case "Daniel" || "daniel":
+        console.log("Bem vindo Dan!");
+    break;
+    default:
+        console.log("Nenhum user encontrado");
+    break;
+}
+
+
+
+____________________________________________________________________________________________
+
+
+
+
+//Notas de um aluno, calucular nota aritimética e dizer se foi aprovado ou não com uma mensagem de apoio
+
+var nota1 = 10;
+var nota2 = 10;
+
+var media = (nota1 + nota2) / 2;
+
+console.log("Sua nota foi: " + media);
+if(media >= 7){
+    if(media == 10){
+        console.log("Foi perfeito!");
+    }else if(media > 8 && media < 10){
+        console.log("Foi excelente");
+    }else{
+        console.log("Pode melhorar");
+    }
+}else{
+    console.log("Não deuuu");
+}
+
+
+
+
+
+
+______________________________________________________________________
+
+
+
+
+
+
+
+
+

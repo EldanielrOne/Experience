@@ -1,0 +1,65 @@
+Exercicio Sobject Retangulo
+
+classe principal:
+
+package Exercicio1;
+
+import java.util.Locale;
+import java.util.Scanner;
+import Exercicio1.classedeTeste;
+public class perimetrooring {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		classedeTeste retangulo = new classedeTeste();
+		//Leia o valor do retangulo
+		
+		System.out.println("Digite o valor a ser calculado: ");
+		System.out.print("Altura: ");
+		retangulo.altura = sc.nextDouble();
+		System.out.print("Largura: ");
+		retangulo.largura = sc.nextDouble();
+		
+		System.out.printf("Área = %.2f\n", retangulo.area());
+		System.out.printf("Perimetro = %.2f\n", retangulo.perimetro());
+		System.out.printf("Diagonal = %.2f\n", retangulo.diagonal());
+		
+		
+		
+		
+		sc.close();
+	}
+
+}
+____________________________________________________________________________________________
+
+
+
+classe de Teste: 
+
+
+package Exercicio1;
+
+public class classedeTeste {
+	public double altura;
+	public double largura;
+	
+	public double area() {
+		return (altura * largura);
+	}
+	public double perimetro() {
+		return 2*(largura + altura);
+	}
+	public double diagonal() {
+		return Math.sqrt(altura * altura + largura * largura);
+	}
+
+}
+
+
+
+
+
+

@@ -1,0 +1,191 @@
+Exercicio do processo seletivo Day3
+
+
+
+___________________________________
+
+
+
+
+/*Calcular quantidade atual de estoque, quantidade máxima e quantidade minima e depois a média 
+e se a atual for maior que a média, retornar que não precisa comprar mais produtos e se for menor que precisa*/
+
+let qtdAtual = 25;
+let qtdMax = 100;
+let qtdMin = 50;
+let qtdMedia = (qtdMax + qtdMin)/2;
+
+console.log(qtdMedia);
+if(qtdAtual >= qtdMedia){
+    console.log(`Seu estoque atual é de ${qtdAtual} de produtos, não é necessário comprar mais por enquanto!`);
+}else{
+    console.log(`Seu estoque tem apenas ${qtdAtual} produtos, é melhor comprar mais produtos!`);
+}
+
+
+
+
+___________________________________________________________________________________________________
+
+
+
+
+
+
+//do while em estrutura de repetição
+
+var num = 50;
+
+do{
+    console.log("Número menor que 100");
+    num = num + 10;
+    //num++;
+    //num += 1;
+    //num * 2;
+    //num *= 2;
+    //num - 1;
+    //num -= 5;
+}while(num < 100);
+
+
+
+___________________________________________________________
+
+
+
+
+
+
+// while em estrutura de repetição
+
+var num = 50;
+
+while(num > 100 && num <0){
+    console.log("Número centenário");
+    if(num == 50){
+        break;
+    }
+}
+console.log("saiu do loop");
+
+
+
+
+
+
+__________________________________________________________
+
+
+
+
+
+// FOR em estrutura de repetição
+
+for(var i = 0; i <10; i++){
+    console.log(i);
+}
+
+
+
+____________________________________________________________
+
+
+
+// numeros impares ou pares em estrutura de repetição
+
+var contador = 0;
+while(contador < 50){
+    if(contador % 2 == 1){
+        console.log(contador);
+    }
+    contador ++;
+
+}
+console.log("Acabouu");
+
+
+_______________________________________________________________
+
+
+
+
+//somente num pares da llisa(array)
+
+let ex=[10, 15, 99, 70, 33, 14, 4, 28, 29];
+
+for(let i =0; i < ex.length; i++ ){
+    if(ex[i] % 2 == 0){
+        console.log(ex[i]);
+    }
+}
+
+
+______________________________________________________________
+
+
+
+
+//Objeto em JS  
+
+var funcionario = Object();
+
+funcionario.nome = "Daniel Rocha";
+funcionario.idade = 20;
+funcionario.telefone = 85933005129;
+
+//formato tabela |
+            //   |
+console.table(funcionario);
+
+//ou
+//especificado
+console.log(funcionario.nome);
+
+
+
+
+
+__________________________________________________________
+
+
+
+//Function sem retorno
+
+
+        // posso declarar o nome da variável name aqui nos parametros ou na execução lá embaixo                             
+function exibirMenu(name){ //(name = "daniel")
+    //if(name != "não logado"){
+         console.log("------------------------------");
+        console.log("Nome do usuário é: " + name);
+        console.log("Olá, seja bem vindo a esta função");
+        console.log("digite 1, 2 ou 3");
+        console.log("------------------------------");
+//  }
+}
+exibirMenu("Daniel lindo");
+
+___________________________________________________________________________
+
+
+
+
+//Function com retorno
+
+function media(v1, v2){
+    return (v1 + v2) / 2;
+}
+
+console.log(media(7, 23));
+
+
+/*ou pode realizar isso: 
+
+v3 = media(50, 150);
+  console.log(v3);
+*/
+
+
+
+
+
+______________________________________________

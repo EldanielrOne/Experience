@@ -1,0 +1,125 @@
+Day 4
+
+
+
+//Day 4
+
+const soma = (v1, v2) =>{
+    return v1 + v2;
+}
+alert("O valor da soma é: " + soma(15, 50));
+
+
+
+//Retorno implicito essa opção:
+/* const soma = (v1, v2) => v1 + v2;
+console.log(soma(15, 50));*/
+
+
+
+
+_______________________________________________________
+
+html and Js:
+
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TesteSeleção</title>
+</head>
+<body>
+    <style>
+        h1{
+            color: brown;
+        }
+        .exemplo{
+            background-color: aqua;
+        }
+        #meuID{
+            background-color: beige;
+        }
+    </style>
+    <h1 class="exemplo">Hello World</h1>
+    <h1>Hello World</h1>
+    <h1 id="meuID">Hello World</h1>
+    <h1 class="exemplo">Hello World</h1>
+    <button onclick="alert('Você clicou na chave poderosa!');"> Calcule </button>
+    <p> Olá amigo !</p>
+    <script src="testeSelecao.js"> </script>
+    
+</body>
+</html>
+===============================
+
+//DOM  - Manipulação de objetos do html
+/*
+//por tag: -> sempre será uma array:
+const h1 = document.getElementsByTagName("h1");
+h1[2].innerText = "Mudei usando js";
+h1[3].style = "color: #006699";
+//ou: h1[3].style.cssText = "color: #006699; font-size: 50px";
+*/
+/*
+// por classe: -> sempre será uma array:
+//const exemplo = document.getElementsByClassName("exemplo");
+//console.log(exemplo);
+//mudar o tipo:
+//exemplo[0].innerHTML = "<button> Agora és um botão </button>";
+*/
+/*
+// por Id: -> sempre será apenas um objeto:
+const meuID = document.getElementById("meuID");
+//console.log(meuID);
+meuID.innerText = "Fui escolhido por ID";
+*/
+/*
+//por Query:
+
+const minhaQuery = document.querySelector("#meuID");
+console.log(minhaQuery);
+*/
+
+
+
+___________________________________________________________________________________
+
+
+
+
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TesteSeleção</title>
+</head>
+<body>
+    <input type="text" name="exemplo" id="meuInput"/>
+
+    <script src="testeSelecao.js"> </script>
+    
+</body>
+</html>
+
+
+=========================================
+
+
+
+
+//aula 4 fala sobre os eventos de focos e outros no minuto 50 a 60
+//Eventos: de input
+const meuInput = document.querySelector("#meuInput");
+//console.log(meuInput.value);
+meuInput.onmouseover = /* ou o onclick para clicar e esse para passar o mouse */ 
+ function(){
+    console.log("Daniel");
+}
+meuInput.onmouseout = 
+function(){
+    console.log("Rocha");
+}
